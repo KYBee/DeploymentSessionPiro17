@@ -15,7 +15,7 @@ SECRET_KEY = 'django-insecure--6b06%ntkm9vveg!@j0=5=bck2i6@y-i9gow%=61d+*2-i6cv5
 
 #TODO : DEBUG 모드가 True라면 Development모드에 적합함. 배포를 위한 버전에서, 그리고 배포를 할 때에는 DEBUG를 False로 바꾸어 배포해야 함
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 #TODO : ALLOWED_HOSTS 지정이 필요하다면 설정해야 함. 모든 접근을 허용하기 위해서는 '*'을 입력
 ALLOWED_HOSTS = ['*']
