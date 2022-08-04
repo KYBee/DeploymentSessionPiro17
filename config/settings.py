@@ -1,17 +1,24 @@
 from pathlib import Path
-import os
+# json, ImproperlyConfigured 추가 -> 배포 전 SecretKey 부분을 수정하기 위해서
+import os, json
+from django.core.exceptions import ImproperlyConfigured
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
-
-# SECURITY WARNING: keep the secret key used in production secret!
-
 #TODO : 수정이 필요한 부분 -> Key 를 지우고 환경변수나 파일로 접근하도록 수정해야 함
-SECRET_KEY = 'django-insecure--6b06%ntkm9vveg!@j0=5=bck2i6@y-i9gow%=61d+*2-i6cv5'
+# BASE_DIR은 manage.py가 있는 곳
+secret = os.path.join(BASE_DIR, 'secret.json')
+with open(secret) as f:
+    secrets = json.loads(f.read())
+
+def get_secret(keyword, secrets=secrets):
+    try:
+        return secrets[keyword]
+    except KeyError:
+        raise ImproperlyConfigured("No variable : {}".format(keyword))
+
+SECRET_KEY = get_secret("SECRET_KEY")
 
 #TODO : DEBUG 모드가 True라면 Development모드에 적합함. 배포를 위한 버전에서, 그리고 배포를 할 때에는 DEBUG를 False로 바꾸어 배포해야 함
 # SECURITY WARNING: don't run with debug turned on in production!
