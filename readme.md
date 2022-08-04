@@ -13,8 +13,8 @@
 <br>
 실습 화면 :
 <div align=center>
-    <img width="49.5%" alt="스크린샷 2022-08-04 오후 11 17 06" src="https://user-images.githubusercontent.com/62539910/182874039-56138a3e-f511-462e-932e-12c4dbc088f2.png">
-    <img width="50%" alt="스크린샷 2022-08-04 오후 11 17 34" src="https://user-images.githubusercontent.com/62539910/182874053-f884812a-9e83-494c-a483-42219bdb48f3.png">
+    <img width="39.5%" alt="스크린샷 2022-08-04 오후 11 17 06" src="https://user-images.githubusercontent.com/62539910/182874039-56138a3e-f511-462e-932e-12c4dbc088f2.png">
+    <img width="40%" alt="스크린샷 2022-08-04 오후 11 17 34" src="https://user-images.githubusercontent.com/62539910/182874053-f884812a-9e83-494c-a483-42219bdb48f3.png">
 </div>
 
 
