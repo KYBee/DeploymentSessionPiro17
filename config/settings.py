@@ -22,7 +22,7 @@ SECRET_KEY = get_secret("SECRET_KEY")
 
 #TODO : DEBUG 모드가 True라면 Development모드에 적합함. 배포를 위한 버전에서, 그리고 배포를 할 때에는 DEBUG를 False로 바꾸어 배포해야 함
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 #TODO : ALLOWED_HOSTS 지정이 필요하다면 설정해야 함. 모든 접근을 허용하기 위해서는 '*'을 입력
 ALLOWED_HOSTS = ['*']
@@ -122,7 +122,7 @@ USE_TZ = True
 #TODO : STATIC_ROOT 를 설정해야 함. NGINX 등의 웹 서버를 사용할 때 웹 서버에서 static 소스를 어디에서 찾아야 하는지를 명시해야함
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'config', 'static')
+    os.path.join(BASE_DIR, 'home', 'static')
 ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
