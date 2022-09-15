@@ -2,7 +2,10 @@
 
 ### 피로그래밍 17기 배포 세션1, 배포 세션 2 레퍼지토리
 
-<b>실습 내용</b> : [https://even-plain-88c.notion.site/1-abeefa387a864b0faf430fbfb8012bc5](https://www.notion.so/1-abeefa387a864b0faf430fbfb8012bc5)
+<b>실습 내용 - 배포 세션 1</b> : [https://even-plain-88c.notion.site/1-abeefa387a864b0faf430fbfb8012bc5](https://www.notion.so/1-abeefa387a864b0faf430fbfb8012bc5)
+<br>
+
+<b>실습 내용 - 배포 세션 2</b> : [https://even-plain-88c.notion.site/2-220813-4c55e7d14fd24985b95fecbab09625ac](https://even-plain-88c.notion.site/2-220813-4c55e7d14fd24985b95fecbab09625ac)
 <br>
 
 <b>실습 목표</b> :
